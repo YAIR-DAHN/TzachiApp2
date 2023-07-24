@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    tools:context=".TfilahFragment">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_tfilah"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:listitem="@layout/tfilah_part"
+        android:clipToPadding="false"
+        android:paddingTop="50dp"
+        />
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        >
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/navigator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|end"
+            android:layout_margin="15dp"
+            android:src="@drawable/menu"
+            />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start|top"
+            android:text="@string/shachrit"
+            android:layout_margin="20dp"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            />
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+</FrameLayout>
