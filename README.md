@@ -1,2 +1,2 @@
 ﻿# TzachiApp
- גרסת בטא
+ Beta version
